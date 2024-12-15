@@ -216,7 +216,7 @@ footer {
 }
 
 /* Media Query for very small screens (phones in portrait mode) */
-@media (max-width: 480px) {
+@media (max-width: 680px) {
   * {
 
 
@@ -227,8 +227,8 @@ footer {
    top: 100%;
     width: max-content;
     height: max-content;
-    padding: 10px;
-    font-size: 1px; /* Adjust font size */
+    padding: 20px;
+    font-size: 20px; /* Adjust font size */
   }
 
   .menu {
