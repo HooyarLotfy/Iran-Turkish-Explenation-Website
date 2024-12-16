@@ -1,4 +1,3 @@
-/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -172,77 +171,143 @@ footer {
   font-size: 1.2em;
 }
 
-/* Media Query for smaller screens (tablets and below) */
-@media (max-width:1200px) {
-  /* Adjust the content area font size */
-  .content {
-    padding: 20px; /* Reduce padding for smaller devices */
-    font-size: 20px; /* Adjust font size */
+/* Media Query for very small screens (phones in portrait mode) */
+@media (min-width: 395px) and (max-width: 550px) {
+  * {
+    margin-right: 20px;
   }
 
-  .content h1 {
-    font-size: 28px; /* Smaller heading font size */
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .content {
+    margin-top: 24%;
+    top: 115%;
+    width: max-content;
+    height: min-content;
+    padding: 20px;
+    font-size: 10px; /* Adjust font size */
   }
 
   .content p {
-    font-size: 18px; /* Smaller paragraph font size */
+    text-align: center;
+    margin-left: 5%;
   }
 
-  /* Adjust the menu links for smaller screens */
   .menu {
-    flex-direction: column; /* Stack menu items vertically */
-    gap: 10px; /* Reduce gap between items */
-    padding: 10px;
-  }
-
-  .menu a {
-    font-size: 1em; /* Reduce font size of menu items */
-    padding: 12px 25px; /* Adjust padding */
-  }
-
-  .menu a i {
-    font-size: 1.5em; /* Adjust icon size */
-  }
-
-  .btn-enter {
-    padding: 15px 40px; /* Adjust button size */
-    font-size: 1.5em; /* Reduce font size */
-  }
-
-  /* Footer */
-  footer p {
-    font-size: 1em; /* Reduce footer text size */
-  }
-}
-
-/* Media Query for very small screens (phones in portrait mode) */
-@media (max-width: 680px) {
-  * {
-
-
-    
-  }
-  /* Further reduce the content font size */
-  .content {
-   top: 100%;
-    width: max-content;
+    margin-left: 15%;
+    margin-top: 20px;
+    width: 500%;
     height: max-content;
-    padding: 20px;
-    font-size: 20px; /* Adjust font size */
-  }
-
-  .menu {
-top: 10%;
-width: max-content;
-
-
+    position: relative;
   }
 
   .footer {
-margin-bottom: -180%
+    margin-bottom: -330%;
+    margin-left: 4%;
+  }
+}
 
-
-
+/* Media Query for devices between 200px and 394px width */
+@media (min-width: 200px) and (max-width: 394px) {
+  * {
+    /* Global styles, if any */
   }
 
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .content {
+    
+    margin-top: 100%; /* Adjust spacing if needed */
+    top: auto; /* Remove absolute positioning */
+    width: 100%; /* Ensure the content fits properly */
+    height: 100%;
+    padding: 20px; /* Reduce padding */
+    font-size: 12px; /* Slightly larger font size */
+  }
+
+  .heading {
+
+    margin-left:20px;
+  }
+
+  .content p {
+    padding-left:30px;
+    font-size: 10px; /* Adjust font size */
+    text-align: center;
+    margin: 10px 10; /* Add consistent spacing */
+  }
+
+  .menu {
+    margin: 0 auto; /* Center the menu */
+    width: 100%;
+    padding: 10px 0; /* Reduce padding */
+    height: auto; /* Remove fixed height */
+    position: relative;
+  }
+
+  .footer {
+    bottom: -125%; /* Positions footer at the bottom */
+    left: 5%; /* Align footer to the left */
+    width: 100%; /* Stretches footer across the screen */
+    padding: 15px 0; /* Add padding */
+    text-align: center;
+    z-index: 2; /* Ensure it appears above other content */
+  }
+}
+
+@media (min-width: 660px) and (max-width: 950px) {
+  video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
+
+  .content {
+    margin-top: 10%;
+    top: 115%;
+    width: max-content;
+    height: min-content;
+    padding: 20px;
+    font-size: 8px; /* Adjust font size */
+    margin-left: 0%;
+  }
+
+  .content p {
+    font-size: 7px;
+    max-width: 800px;
+    text-align: center;
+  }
+
+  .menu {
+    margin-left: 0%;
+    margin-top: 20px;
+    width: 500%;
+    height: max-content;
+    position: relative;
+  }
+
+  .footer {
+    margin-bottom: -85%;
+    margin-left: -1%;
+  }
 }
