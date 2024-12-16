@@ -86,18 +86,21 @@ video {
 .menu a i {
   font-size: 2em; /* Increased icon size */
 }
-
+.content {
+ margin-top: 190px;
+  
+}
 .content h1 {
   font-size: 40px;
   text-transform: uppercase;
   letter-spacing: 4px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .content p {
   font-size: 30px;
-  margin-top: 10px;
+ 
   line-height: 1.8;
   font-weight: lighter;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
@@ -106,7 +109,7 @@ video {
 /* Footer styling */
 footer {
   position: absolute; /* Ensure footer stays at the bottom */
-  bottom: 0;
+  bottom: -55%;
   width: 100%;
   text-align: center;
   padding: 30px;
